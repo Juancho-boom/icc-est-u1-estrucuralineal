@@ -1,6 +1,8 @@
 # Práctica de Estructuras de Datos Lineales: Pilas y Colas
 
 **Estudiante:** Juan David Coronel Palacios 
+**Curso:** Grupo 3
+**Fecha:** 10/06/2026
  
 
 ## Descripción del Proyecto
