@@ -1,18 +1,43 @@
-## Getting Started
+# Práctica de Estructuras de Datos Lineales: Pilas y Colas
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+**Estudiante:** [Tu Nombre y Apellido]  
+**Versión:** 2.0.2  
 
-## Folder Structure
+## Descripción del Proyecto
+Este proyecto contiene la resolución de tres problemas de lógica algorítmica empleando Estructuras de Datos Lineales en Java. Se implementaron validaciones de sintaxis a través de Pilas (`Stack`) y de flujo de caracteres mediante el comportamiento FIFO propio de las Colas (`Queue`).
 
-The workspace contains two folders by default, where:
+---
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Explicación de los Ejercicios
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+### Ejercicio 01: Validación de Signos usando Stack
+- **Funcionamiento:** Se analiza la cadena mediante un bucle. Cada símbolo de apertura `(`, `{`, `[` se guarda en la pila. Al detectar un cierre, se extrae el elemento superior de la pila para verificar correspondencia de tipos. Si al final la pila queda vacía, la expresión es correcta.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+### Ejercicio 02: Ordenamiento de un Stack
+- **Funcionamiento:** Utilizando únicamente un `Stack` auxiliar y variables primitivas de control, se realiza un ordenamiento iterativo inverso. Los elementos mayores se desplazan temporalmente hacia atrás en la pila original para permitir posicionar el elemento menor en el fondo del stack auxiliar, logrando que el menor quede finalmente en el tope del stack principal.
 
-## Dependency Management
+### Ejercicio 03: Validación de Palíndromos usando Colas
+- **Funcionamiento:** La palabra se ingresa simultáneamente en una Cola (`Queue`) y en una Pila (`Stack`). Al retirar los elementos en paralelo, la cola nos entrega la palabra en su sentido original (izquierda a derecha) y la pila en sentido inverso (derecha a izquierda), permitiendo comprobar la simetría del palíndromo de forma eficiente.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+---
+
+## Evidencias de Código y Salida
+
+### Bloques de Código Desarrollado
+*(Los bloques completos se encuentran en la carpeta `src/utils/`)*
+
+### Salida de la Consola
+```text
+Ejercicio 01: Validación de Signos
+Cadena: ([{}]) | Resultado: true
+Cadena: ([()] | Resultado: false
+
+Ejercicio 02: Ordenar Stack
+Stack original: [2, 4, 1, 5]
+Stack ordenado: [5, 4, 2, 1]
+Tope esperado: 1
+
+Ejercicio 03: Palíndromo usando Colas
+ana   | Resultado: true
+radar | Resultado: true
+java  | Resultado: false
