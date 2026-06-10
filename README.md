@@ -1,7 +1,7 @@
 # Práctica de Estructuras de Datos Lineales: Pilas y Colas
 
-**Estudiante:** [Tu Nombre y Apellido]  
-**Versión:** 2.0.2  
+**Estudiante:** Juan David Coronel Palacios 
+ 
 
 ## Descripción del Proyecto
 Este proyecto contiene la resolución de tres problemas de lógica algorítmica empleando Estructuras de Datos Lineales en Java. Se implementaron validaciones de sintaxis a través de Pilas (`Stack`) y de flujo de caracteres mediante el comportamiento FIFO propio de las Colas (`Queue`).
